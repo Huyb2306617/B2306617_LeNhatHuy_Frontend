@@ -11,6 +11,12 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "notfound",
     component: () => import("@/Views/NotFound.vue"),
+  },
+  {
+    path: "/contact/:id",
+    name: "contact.edit",
+    component: () => import("@/Views/ContactEdit.vue"),
+    props: true
   }
 ];
 
